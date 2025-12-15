@@ -20,9 +20,9 @@ app.post("/calculate-bmi", (req, res) => {
     res.json({ bmi });
 });
 
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"));
-});
+// app.get("/", (req, res) => {
+//     res.sendFile(path.join(__dirname, "index.html"));
+// });
 
 const PORT = 3000;
 app.listen(PORT, () => {
